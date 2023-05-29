@@ -2,13 +2,12 @@
   "name": "meteor",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
+    "dev": "./scripts/development.sh",
+    "dev-cron" : "./scripts/development-cron.sh"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.7",
+    "@types/meteor": "^2.9.2",
     "meteor-node-stubs": "^1.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
