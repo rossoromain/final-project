@@ -7,6 +7,7 @@ Epitech pre-msc final project
 
 ```sh
 
+sudo npm i -g meteor
 cd meteor/
 meteor npm i -g yarn
 meteor yarn install
