@@ -3,14 +3,23 @@
   "private": true,
   "scripts": {
     "dev": "./scripts/development.sh",
-    "dev-cron" : "./scripts/development-cron.sh"
+    "dev-cron": "./scripts/development-cron.sh",
+    "dev-db": "./scripts/development-database.sh"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.7",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.1",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.3",
+    "@types/material-ui": "^0.21.12",
     "@types/meteor": "^2.9.2",
+    "@types/simpl-schema": "^1.12.3",
     "meteor-node-stubs": "^1.2.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "simpl-schema": "^3.4.1"
   },
   "meteor": {
     "mainModule": {
