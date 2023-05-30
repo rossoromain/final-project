@@ -34,7 +34,7 @@ What the IA should do :
 
 - Receive network logs from the proxy.
 - Preprocess the data
-- Detect the anomalies using an **isolation forest** algorithm
+- Detect the anomalies using an **random forest** algorithm
 
 
 The base will be trained into a **ISCX NSL-KDD** dataset, which is open-source and provide a range of variety of common attacks.
@@ -86,7 +86,6 @@ The dataset is made as follow :
 The machine will learn from administrator's inputs and new logs.
 It should be possible to train it to new datas from the interface, by specifying the fields above or give it a CSV file.
 
-
 ## Backend
 
 The backend will be a nodeJS one with the meteor framework.
@@ -120,7 +119,7 @@ We will send a state as follow (could be incremented on the needs) :
 
 Once sent, we will send only the modifyed machines to gain in performance.
 
-The backend should be incrementable by using custom scripts/plugin.
+The service should be incrementable by using custom scripts/plugins.
 
 We will provide 5 plugins by default, which will be:
 
@@ -130,7 +129,7 @@ We will provide 5 plugins by default, which will be:
 - The AI network analyser
 - A process monitoring tool
 
-Every plugin should be activable/deactivable.
+
 
 
 
